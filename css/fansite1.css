@@ -1,0 +1,211 @@
+/* fansite1.css */
+/* Palette inspirée de Taylor Swift (rose, violet, doré) */
+
+body {
+  background: linear-gradient(135deg, #ffe0ec 0%, #e0c3fc 100%);
+}
+
+/* Header et Footer personnalisés */
+.header {
+  background: linear-gradient(90deg, #e6b0aa 0%, #bb8fce 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(230, 176, 170, 0.2);
+}
+
+.footer {
+  background: linear-gradient(90deg, #bb8fce 0%, #e6b0aa 100%);
+  color: #fff;
+  box-shadow: 0 -2px 8px rgba(230, 176, 170, 0.15);
+}
+
+/* Titres */
+h1, h2 {
+  color: #922b21;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px #fff3;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Cartes */
+.card-taylor {
+  border-top: 8px solid #e6b0aa;
+  background: rgba(255,255,255,0.92);
+  box-shadow: 0 6px 24px rgba(230, 176, 170, 0.25);
+  animation: popIn 0.7s;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-taylor:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 12px 36px #e6b0aa55;
+}
+
+/* Liens */
+a {
+  color: #922b21;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #bb8fce;
+  text-decoration: underline;
+}
+
+/* Navigation active */
+.nav-list a.active,
+.nav-list a:focus {
+  color: #e6b0aa;
+  border-bottom: 2px solid #e6b0aa;
+}
+
+/* Boutons */
+button {
+  background: linear-gradient(90deg, #e6b0aa 0%, #bb8fce 100%);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.7em 2em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #e6b0aa55;
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #bb8fce 0%, #e6b0aa 100%);
+  transform: scale(1.06);
+}
+
+/* Formulaire */
+form input, form textarea {
+  border: 1.5px solid #e6b0aa;
+  border-radius: 8px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  background: #fff;
+  transition: border 0.3s;
+}
+form input:focus, form textarea:focus {
+  border: 2px solid #bb8fce;
+  outline: none;
+}
+
+/* Images et vidéos */
+.img-responsive, iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #bb8fce33;
+  margin-bottom: 1em;
+}
+
+/* Animations */
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.8);}
+  80% { opacity: 1; transform: scale(1.05);}
+  100% { opacity: 1; transform: scale(1);}
+}
+
+/* Responsive grid pour les cartes */
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
+  .card-taylor {
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .header, .footer {
+    padding: 0.5em 0;
+  }
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.1em; }
+  button { font-size: 1em; }
+}
+
+/* Extra : adoucir les transitions */
+* {
+  transition: background 0.3s, color 0.3s, border 0.3s, box-shadow 0.3s;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 12px #bb8fce33;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  list-style: none;
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+
+.social-list li ul{
+  display: flex;
+  justify-content: center;
+}
+
+
+.social-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px #e6b0aa33;
+  font-size: 2.2em;
+  color: #922b21;
+  border: 2px solid #e6b0aa;
+  transition: background 0.2s, color 0.2s, transform 0.2s, border 0.2s;
+}
+
+.social-list a:hover {
+  background: linear-gradient(135deg, #e6b0aa 0%, #bb8fce 100%);
+  color: #fff;
+  border-color: #bb8fce;
+  transform: scale(1.12);
+}
+
+/* Icône Instagram : effet spécial */
+.social-list a[aria-label="Instagram"]:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-color: #d6249f;
+}
+
+/* Icône Twitter : bleu */
+.social-list a[aria-label="Twitter"]:hover {
+  background: #1da1f2;
+  border-color: #1da1f2;
+}
+
+/* Icône Globe : violet */
+.social-list a[aria-label="Site officiel"]:hover {
+  background: #bb8fce;
+  border-color: #bb8fce;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .social-list {
+    gap: 1em;
+  }
+  .social-list a {
+    width: 44px;
+    height: 44px;
+    font-size: 1.4em;
+  }
+}
+
