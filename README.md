@@ -28,29 +28,5 @@ Le design est moderne, coloré et responsive.
 
 ## 📁 Structure du projet
 <img width="170" alt="image" src="https://github.com/user-attachments/assets/a62e82b5-1303-441c-b4f4-2dab226f5d81" />
-<img width="170" alt="image" src="https://github.com/user-attachments/assets/a62e82b5-1303-441c-b4f4-2dab226f5d81" />
 
 
-fansite/
-├── index.html
-├── css/
-│ ├── style.css
-│ ├── fansite1.css
-│ ├── fansite2.css
-│ └── fansite3.css
-├── fansite1/
-│ ├── fansite1.html
-│ ├── actus.html
-│ ├── galerie.html
-│ └── contact.html
-├── fansite2/
-│ ├── fansite2.html
-│ ├── actus.html
-│ ├── galerie.html
-│ └── contact.html
-├── fansite3/
-│ ├── fansite3.html
-│ ├── actus.html
-│ ├── galerie.html
-│ └── contact.html
-└── images/
