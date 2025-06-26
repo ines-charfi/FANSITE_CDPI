@@ -27,6 +27,9 @@ Le design est moderne, coloré et responsive.
 - **CSS**
 
 ## 📁 Structure du projet
+<img width="170" alt="image" src="https://github.com/user-attachments/assets/a62e82b5-1303-441c-b4f4-2dab226f5d81" />
+<img width="170" alt="image" src="https://github.com/user-attachments/assets/a62e82b5-1303-441c-b4f4-2dab226f5d81" />
+
 
 fansite/
 ├── index.html
